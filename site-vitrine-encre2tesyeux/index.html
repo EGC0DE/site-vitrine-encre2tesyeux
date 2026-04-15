@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L'Encre 2 Tes Yeux – Salon de Tatouage à Annecy</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header id="header">
+    <nav class="navbar">
+      <a href="#accueil" class="logo">
+        <img src="logo-encre2tesyeux.png" alt="L'Encre 2 Tes Yeux" class="logo-img" />
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#accueil"    class="nav-link">Accueil</a></li>
+        <li><a href="#galerie"    class="nav-link">Galerie</a></li>
+        <li><a href="#tarifs"     class="nav-link">Tarifs</a></li>
+        <li><a href="#a-propos"   class="nav-link">À propos</a></li>
+        <li><a href="#contact"    class="nav-link">Contact</a></li>
+        <li><a href="#rendez-vous" class="nav-link nav-cta">Prendre RDV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="accueil" class="hero">
+    <div class="hero-noise"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <div class="hero-eyeline">
+        <span class="hero-line"></span>
+        <span class="hero-tag">Salon de Tatouage &amp; Piercing · Annecy</span>
+        <span class="hero-line"></span>
+      </div>
+      <h1 class="hero-title">
+        <span class="hero-title-l1">L'Encre</span>
+        <span class="hero-title-l2">2 Tes Yeux</span>
+      </h1>
+      <p class="hero-subtitle">Art corporel sur-mesure par <strong>Drei Olly</strong><br>au cœur des Alpes, à Annecy.</p>
+      <div class="hero-buttons">
+        <a href="#rendez-vous" class="btn btn-primary">Prendre rendez-vous</a>
+        <a href="#galerie"     class="btn btn-ghost">Voir les créations</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://www.instagram.com/l2ty74/" target="_blank" rel="noopener" class="hero-social-link">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          @l2ty74
+        </a>
+        <a href="https://www.facebook.com/p/Lencre-2-tes-yeux-61557616375171/" target="_blank" rel="noopener" class="hero-social-link">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="1.5"/></svg>
+          L'encre 2 tes yeux
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERIE ===== -->
+  <section id="galerie" class="section galerie">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Galerie</h2>
+        <p class="section-desc">Chaque tatouage est une œuvre unique, réalisée sur-mesure. Découvrez le travail de <strong>Drei Olly</strong>.</p>
+      </div>
+
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="blackwork">Blackwork</button>
+        <button class="filter-btn" data-filter="realisme">Réalisme</button>
+        <button class="filter-btn" data-filter="japonais">Japonais</button>
+        <button class="filter-btn" data-filter="geometrique">Géométrique</button>
+        <button class="filter-btn" data-filter="piercing">Piercing</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Ligne 1 -->
+        <div class="gallery-item" data-category="blackwork">
+          <img src="tattoo1.jpg.png"
+               alt="Tatouage Blackwork - L'Encre 2 Tes Yeux Annecy"
+               loading="lazy" />
+          <div class="gallery-overlay"><p>Blackwork · Avant-bras</p></div>
+        </div>
+
+        <div class="gallery-item" data-category="realisme">
+          <img src="tattoo3.jpg.png"
+               alt="Tatouage Réalisme Portrait - L'Encre 2 Tes Yeux Annecy"
+               loading="lazy" />
+          <div class="gallery-overlay"><p>Portrait réaliste · Épaule</p></div>
+        </div>
+
+        <!-- Ligne 2 -->
+        <div class="gallery-item" data-category="blackwork">
+          <img src="tattoo2.jpg.png"
+               alt="Tatouage Blackwork Mandala - L'Encre 2 Tes Yeux Annecy"
+               loading="lazy" />
+          <div class="gallery-overlay"><p>Mandala · Dos</p></div>
+        </div>
+
+        <div class="gallery-item" data-category="japonais">
+          <img src="tattoo5.jpg.png"
+               alt="Tatouage Japonais Koi - L'Encre 2 Tes Yeux Annecy"
+               loading="lazy" />
+          <div class="gallery-overlay"><p>Koi · Demi-manche</p></div>
+        </div>
+
+        <!-- Ligne 3 -->
+        <div class="gallery-item" data-category="geometrique">
+          <img src="tattoo6.jpg.png"
+               alt="Tatouage Géométrique Dotwork - L'Encre 2 Tes Yeux Annecy"
+               loading="lazy" />
+          <div class="gallery-overlay"><p>Dotwork géométrique · Poignet</p></div>
+        </div>
+
+        <div class="gallery-item" data-category="piercing">
+          <img src="piercing1.jpg.png"
+               alt="Piercing - L'Encre 2 Tes Yeux Annecy"
+               loading="lazy" />
+          <div class="gallery-overlay"><p>Piercing · Oreille</p></div>
+        </div>
+      </div>
+
+      <!-- Instagram CTA -->
+      <div class="gallery-instagram">
+        <div class="ig-text">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          <div>
+            <p>Retrouvez toutes nos créations sur Instagram</p>
+            <strong>@l2ty74 · 27K abonnés</strong>
+          </div>
+        </div>
+        <a href="https://www.instagram.com/l2ty74/" target="_blank" rel="noopener" class="btn btn-primary">Voir le profil Instagram</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== TARIFS ===== -->
+  <section id="tarifs" class="section tarifs">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nos prix</span>
+        <h2 class="section-title">Tarifs</h2>
+        <p class="section-desc">Tarifs indicatifs. Un devis personnalisé est établi lors de la consultation gratuite.</p>
+      </div>
+
+      <div class="tarifs-grid">
+
+        <!-- Petit tatouage -->
+        <div class="tarif-card">
+          <div class="tarif-icon">✦</div>
+          <h3>Petit tatouage</h3>
+          <p class="tarif-detail">Jusqu'à 5 cm · Design simple</p>
+          <div class="tarif-price">à partir de <strong>80 €</strong></div>
+          <ul class="tarif-list">
+            <li>Flash du jour disponibles</li>
+            <li>Motifs minimalistes</li>
+            <li>Lettrage court</li>
+          </ul>
+          <a href="#rendez-vous" class="btn btn-outline btn-sm">Réserver</a>
+        </div>
+
+        <!-- Tatouage moyen -->
+        <div class="tarif-card tarif-card--featured">
+          <div class="tarif-badge">Populaire</div>
+          <div class="tarif-icon">✦✦</div>
+          <h3>Tatouage moyen</h3>
+          <p class="tarif-detail">5 à 15 cm · Design intermédiaire</p>
+          <div class="tarif-price">à partir de <strong>150 €</strong></div>
+          <ul class="tarif-list">
+            <li>Consultation incluse</li>
+            <li>Design sur-mesure</li>
+            <li>Retouche offerte</li>
+          </ul>
+          <a href="#rendez-vous" class="btn btn-primary btn-sm">Réserver</a>
+        </div>
+
+        <!-- Grand tatouage -->
+        <div class="tarif-card">
+          <div class="tarif-icon">✦✦✦</div>
+          <h3>Grand tatouage</h3>
+          <p class="tarif-detail">15 cm et + · Design complexe</p>
+          <div class="tarif-price">à partir de <strong>300 €</strong></div>
+          <ul class="tarif-list">
+            <li>Consultation gratuite</li>
+            <li>Pièce unique sur-mesure</li>
+            <li>Devis détaillé fourni</li>
+          </ul>
+          <a href="#rendez-vous" class="btn btn-outline btn-sm">Réserver</a>
+        </div>
+
+        <!-- Projet multi-séances -->
+        <div class="tarif-card">
+          <div class="tarif-icon">◈</div>
+          <h3>Projet multi-séances</h3>
+          <p class="tarif-detail">Sleeve, dos, projet sur plusieurs sessions</p>
+          <div class="tarif-price"><strong>Sur devis</strong></div>
+          <ul class="tarif-list">
+            <li>Planification multi-séances</li>
+            <li>Suivi personnalisé</li>
+            <li>Tarif avantageux</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-sm">Nous contacter</a>
+        </div>
+
+      </div>
+
+      <div class="tarif-note">
+        <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M10 9 L10 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="10" cy="6.5" r="1" fill="currentColor"/></svg>
+        <p><strong>Acompte de 30 %</strong> demandé à la réservation · Espèces ou virement acceptés · Piercing également disponible au salon</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== À PROPOS ===== -->
+  <section id="a-propos" class="section a-propos">
+    <div class="container">
+      <div class="apropos-grid">
+        <div class="apropos-image">
+          <div class="apropos-img-real">
+            <img src="encre2tesyeux-insta.jpg" alt="L'Encre 2 Tes Yeux – Salon Annecy" loading="lazy" />
+          </div>
+          <div class="apropos-badge">
+            <span class="badge-number">27K</span>
+            <span class="badge-text">abonnés<br>Instagram</span>
+          </div>
+        </div>
+
+        <div class="apropos-content">
+          <span class="section-tag">Notre histoire</span>
+          <h2 class="section-title">À propos du salon</h2>
+          <p>Situé au <strong>10 Avenue de Chambery à Annecy</strong>, le salon <strong>L'Encre 2 Tes Yeux</strong> est tenu par <strong>Drei Olly</strong>, tatoueur passionné et artiste confirmé. Chaque tatouage est une histoire personnelle, une œuvre d'art qui vous accompagnera toute votre vie.</p>
+          <p>Du blackwork épuré au réalisme détaillé, des pièces graphiques aux compositions japonaises — Drei maîtrise de nombreux styles pour répondre à vos projets les plus ambitieux comme les plus intimes.</p>
+          <p>Hygiène et sécurité irréprochables : matériel à usage unique, cabine individuelle, et accompagnement post-tatouage systématique.</p>
+
+          <div class="apropos-values">
+            <div class="value-item">
+              <div class="value-icon">
+                <svg viewBox="0 0 20 20" fill="none"><path d="M10 2 L12 7 L17 8 L13 12 L14 17 L10 15 L6 17 L7 12 L3 8 L8 7 Z" stroke="currentColor" stroke-width="1.2"/></svg>
+              </div>
+              <div>
+                <strong>Art sur-mesure</strong>
+                <p>Chaque projet est unique, dessiné spécifiquement pour vous</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">
+                <svg viewBox="0 0 20 20" fill="none"><path d="M10 2 C10 2 3 6 3 11 C3 14.5 6.1 17 10 17 C13.9 17 17 14.5 17 11 C17 6 10 2 10 2Z" stroke="currentColor" stroke-width="1.2"/><path d="M7 11 L9 13 L13 9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+              </div>
+              <div>
+                <strong>Hygiène irréprochable</strong>
+                <p>Matériel stérile à usage unique, respect des normes sanitaires</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">
+                <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.2"/><path d="M10 6 L10 11 L13 13" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+              </div>
+              <div>
+                <strong>Suivi complet</strong>
+                <p>Conseils de cicatrisation personnalisés, retouche incluse</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="apropos-social-links">
+            <a href="https://www.instagram.com/l2ty74/" target="_blank" rel="noopener" class="btn btn-primary">
+              <svg viewBox="0 0 20 20" fill="none"><rect x="2" y="2" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.5"/><circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="14.5" cy="5.5" r="0.8" fill="currentColor"/></svg>
+              Instagram @l2ty74
+            </a>
+            <a href="#rendez-vous" class="btn btn-ghost">Prendre RDV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRISE DE RDV ===== -->
+  <section id="rendez-vous" class="section rdv">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Réservation</span>
+        <h2 class="section-title">Prendre rendez-vous</h2>
+        <p class="section-desc">Remplissez le formulaire ou contactez-nous directement. Réponse sous 48h.</p>
+      </div>
+
+      <div class="rdv-grid">
+        <form class="rdv-form" id="rdvForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="prenom">Prénom *</label>
+              <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required />
+            </div>
+            <div class="form-group">
+              <label for="nom">Nom *</label>
+              <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="votre@email.fr" required />
+            </div>
+            <div class="form-group">
+              <label for="tel">Téléphone</label>
+              <input type="tel" id="tel" name="tel" placeholder="06 XX XX XX XX" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="style">Style souhaité</label>
+            <select id="style" name="style">
+              <option value="">-- Choisir un style --</option>
+              <option>Blackwork</option>
+              <option>Réalisme</option>
+              <option>Japonais traditionnel</option>
+              <option>Géométrique / Dotwork</option>
+              <option>Fine Line</option>
+              <option>Old School / New School</option>
+              <option>Tribal</option>
+              <option>Autre / Je ne sais pas encore</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="taille">Taille estimée</label>
+              <select id="taille" name="taille">
+                <option value="">-- Taille --</option>
+                <option>Petit (- de 5 cm)</option>
+                <option>Moyen (5 à 15 cm)</option>
+                <option>Grand (15 cm et +)</option>
+                <option>Projet complet (sleeve, dos…)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="date">Date souhaitée</label>
+              <input type="date" id="date" name="date" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Décrivez votre projet *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Zone du corps, idée, inspirations, références… Joignez des images si possible." required></textarea>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" id="consent" name="consent" required />
+            <label for="consent">J'accepte que mes données soient utilisées pour traiter ma demande de rendez-vous.</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Envoyer ma demande</button>
+          <div class="form-success" id="formSuccess">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M8 12 L11 15 L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            Demande envoyée ! Nous vous répondrons sous 48h.
+          </div>
+        </form>
+
+        <div class="rdv-infos">
+          <div class="rdv-info-card">
+            <h3>Informations pratiques</h3>
+            <ul class="info-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg>
+                <div><strong>Adresse</strong><span>10 Avenue de Chambery<br>74000 Annecy</span></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.62 4.5 2 2 0 0 1 3.62 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.16 6.16l.97-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="1.8"/></svg>
+                <div><strong>Téléphone</strong><a href="tel:+33480974695"><span>04 80 97 46 95</span></a></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.8"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="1.8"/></svg>
+                <div><strong>Email</strong><span>contact@encre2tesyeux.fr</span></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.8"/><polyline points="12,6 12,12 16,14" stroke="currentColor" stroke-width="1.8"/></svg>
+                <div>
+                  <strong>Horaires</strong>
+                  <span>Lun–Sam : 10h – 19h</span>
+                  <span>Dimanche : Fermé</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="rdv-info-card">
+            <h3>Nos réseaux</h3>
+            <div class="social-links">
+              <a href="https://www.instagram.com/l2ty74/" target="_blank" rel="noopener" class="social-btn social-btn--ig">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
+                <div><strong>Instagram</strong><span>@l2ty74</span></div>
+              </a>
+              <a href="https://www.facebook.com/p/Lencre-2-tes-yeux-61557616375171/" target="_blank" rel="noopener" class="social-btn social-btn--fb">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="1.8"/></svg>
+                <div><strong>Facebook</strong><span>L'encre 2 tes yeux</span></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nous trouver</span>
+        <h2 class="section-title">Contact &amp; Accès</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-map">
+          <div class="map-placeholder">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.5!2d6.1194!3d45.8992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b8f3e3e3e3e3e%3A0x0!2s10+Avenue+de+Chamb%C3%A9ry%2C+74000+Annecy!5e0!3m2!1sfr!2sfr!4v1"
+              width="100%"
+              height="400"
+              style="border:0; border-radius: 2px; filter: grayscale(100%) invert(90%) contrast(90%);"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="L'Encre 2 Tes Yeux — 10 Avenue de Chambéry, 74000 Annecy">
+            </iframe>
+            <a href="https://maps.google.com/?q=10+Avenue+de+Chambery+74000+Annecy" target="_blank" rel="noopener" class="map-link">
+              <svg viewBox="0 0 16 16" fill="none"><path d="M8 1C5.24 1 3 3.24 3 6c0 3.5 5 9 5 9s5-5.5 5-9c0-2.76-2.24-5-5-5z" stroke="currentColor" stroke-width="1.2"/><circle cx="8" cy="6" r="1.5" stroke="currentColor" stroke-width="1.2"/></svg>
+              Ouvrir dans Google Maps
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-details">
+          <div class="contact-block">
+            <h3>Venir nous voir</h3>
+            <p>
+              <strong>L'Encre 2 Tes Yeux</strong><br />
+              10 Avenue de Chambery<br />
+              74000 Annecy
+            </p>
+            <p>Parking à proximité. À 5 minutes du lac d'Annecy.</p>
+            <a href="tel:+33480974695" class="contact-tel">04 80 97 46 95</a>
+          </div>
+          <div class="contact-block">
+            <h3>Horaires d'ouverture</h3>
+            <table class="horaires-table">
+              <tr><td>Lundi</td><td>10h – 19h</td></tr>
+              <tr><td>Mardi</td><td>10h – 19h</td></tr>
+              <tr><td>Mercredi</td><td>10h – 19h</td></tr>
+              <tr><td>Jeudi</td><td>10h – 19h</td></tr>
+              <tr><td>Vendredi</td><td>10h – 19h</td></tr>
+              <tr><td>Samedi</td><td>10h – 18h</td></tr>
+              <tr class="closed"><td>Dimanche</td><td>Fermé</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-eye footer-eye">
+            <svg viewBox="0 0 36 24" fill="none"><path d="M1 12 C6 3 30 3 35 12 C30 21 6 21 1 12Z" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="12" r="2" fill="currentColor"/></svg>
+          </span>
+          <div>
+            <span class="logo-main">L'Encre 2 Tes Yeux</span>
+            <span class="logo-sub">Tatouage · Piercing · Annecy</span>
+          </div>
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/l2ty74/" target="_blank" rel="noopener" class="footer-social">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          </a>
+          <a href="https://www.facebook.com/p/Lencre-2-tes-yeux-61557616375171/" target="_blank" rel="noopener" class="footer-social">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="1.5"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#galerie">Galerie</a></li>
+            <li><a href="#tarifs">Tarifs</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#rendez-vous">Prendre RDV</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>10 Avenue de Chambery<br>74000 Annecy</p>
+          <a href="tel:+33480974695">04 80 97 46 95</a>
+          <p>contact@encre2tesyeux.fr</p>
+        </div>
+        <div class="footer-col">
+          <h4>Réseaux</h4>
+          <a href="https://www.instagram.com/l2ty74/" target="_blank" rel="noopener">Instagram @l2ty74</a>
+          <a href="https://www.facebook.com/p/Lencre-2-tes-yeux-61557616375171/" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 L'Encre 2 Tes Yeux · Tous droits réservés · Annecy</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- Scroll reveal animation -->
+  <script>
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 100);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.section-header, .gallery-item, .tarif-card, .contact-block, .value-item, .rdv-info-card, .apropos-image, .apropos-content')
+      .forEach(el => { el.classList.add('reveal'); revealObserver.observe(el); });
+  </script>
+</body>
+</html>
